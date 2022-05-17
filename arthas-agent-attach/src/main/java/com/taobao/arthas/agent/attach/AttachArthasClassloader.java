@@ -35,8 +35,4 @@ public class AttachArthasClassloader extends URLClassLoader {
         }
         return super.loadClass(name, resolve);
     }
-
-    protected void git() {
-        System.out.println("git test!!!!!");
-    }
 }
