@@ -24,6 +24,7 @@ public class AttachArthasClassloader extends URLClassLoader {
         if (name != null && (name.startsWith("sun.") || name.startsWith("java."))) {
             return super.loadClass(name, resolve);
         }
+        // 增加comment
         try {
             Class<?> aClass = findClass(name);
             if (resolve) {
